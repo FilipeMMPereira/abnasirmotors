@@ -1,0 +1,654 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700|Roboto:400,500,700,700i&amp;display=swap');
+@import url('https://fonts.googleapis.com/css?family=Hind:400,600&amp;display=swap');
+
+html,
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 1rem;
+	line-height: 1.7;
+	color: #333;
+	font-weight: 300;
+	margin: 0 auto;
+	position: relative;
+	overflow-x: hidden;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiase;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.container-fluid p,
+li {
+	font-size: 1rem;
+	display: block;
+	line-height: 1.7;
+	margin-bottom: 0;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	s: auto;
+	text-align: center;
+}
+
+a {
+	color: #253746;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #333;
+	text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+	font-family: 'Montserrat', sans-serif;
+}
+
+/*-- TOP MENU ROW --*/
+.top-menu {
+	position: relative;
+	z-index: 1;
+	padding: 4px 0;
+	background: linear-gradient(to left, #780206, #061161);
+}
+
+.top-menu .top_header {
+	font-size: 0.8rem;
+	color: #cccccc;
+}
+
+.to_content_right {
+	text-align: right;
+}
+
+.top-menu i {
+	padding-right: 2px;
+}
+
+.navbar {
+	background-color: #fff;
+	-webkit-box-shadow: 0px 1px 1px #cccccc;
+	-moz-box-shadow: 0px 1px 1px #cccccc;
+	box-shadow: 0px 1px 1px #cccccc;
+	padding: 15px 0px;
+	position: relative;
+}
+
+/*sticky header position*/
+.sticky.is-sticky {
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	z-index: 1000;
+	width: 100%;
+}
+
+.navbar-toggler:focus {
+	outline: none !important;
+	box-shadow: none !important;
+}
+
+.navbar-brand {
+	width: 200px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+	font-family: 'Hind', sans-serif;
+	text-transform: uppercase;
+	transition: all 0.3s ease 0s;
+	border-bottom: 1px solid transparent;
+	display: block;
+	padding: 0;
+	font-weight: 600;
+	font-size: 0.8rem;
+	margin-left: 20px;
+	color: #253746;
+}
+
+.navbar-light .navbar-nav .nav-link:focus {
+	outline: none !important;
+	box-shadow: none !important;
+}
+
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show>.nav-link {
+	color: #780206;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+	color: #780206;
+}
+
+/*--humberuger menu--*/
+.navbar-light .navbar-toggler {
+	color: #780206;
+	border-color: transparent;
+	cursor: pointer;
+}
+
+/*---dropdown menu---*/
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background: #f2f2f2;
+	text-transform: uppercase;
+	min-width: 200px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+}
+
+.dropdown-content a {
+	padding: 12px 16px;
+	border-bottom: 1px solid #d6d6d6;
+	text-decoration: none;
+	font-family: "Montserrat", sans-serif;
+	display: block;
+	font-size: 0.7rem;
+	font-weight: 600;
+	letter-spacing: 1px;
+}
+
+.dropdown-content a:hover {
+	color: #fff;
+	background-color: #780206;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.dropdown-content .serv-menu-img {
+	width: 20px;
+	margin-right: 15px;
+}
+
+/*-----hero image---*/
+#hero {
+	background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)),
+		url('../img/home-ban-02.jpg');
+	background-color: #000;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	position: relative;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	height: 530px;
+	z-index: 1;
+}
+
+.hero_top {
+	display: block;
+	font-size: 2rem;
+	font-family: "Montserrat", sans-serif;
+	text-transform: capitalize;
+}
+
+.hero-caption_one {
+	padding-top: 12%;
+}
+
+.hero-caption_one .digital-title {
+	font-weight: 600;
+	font-size: 3.5rem;
+	font-weight: 700;
+	letter-spacing: 1px;
+	margin: 0;
+	text-transform: capitalize;
+	padding-bottom: 10px;
+}
+
+.btn {
+	font-size: 0.85rem;
+	transition: 0.3s ease-in-out;
+	letter-spacing: 1px;
+	font-weight: 600;
+	padding: 12px 34px;
+	text-transform: uppercase;
+	font-family: "Montserrat", sans-serif;
+	border: none;
+}
+
+.hero_btn {
+	background: rgb(120, 2, 6);
+	color: #fff;
+	padding: 20px 40px;
+}
+
+.hero_btn:hover {
+	background: rgba(120, 2, 6, .85);
+	color: #fff;
+}
+
+.btn:focus {
+	outline: none !important;
+	box-shadow: none !important;
+}
+
+/*===== call hero =====*/
+.call_hero_top {
+	background-color: #780206;
+	padding: 30px 0;
+	color: #fff;
+}
+
+.call_hero_top .call_btn_hero {
+	border: 1px solid #fff !important;
+}
+
+/*=====ABOUT=======*/
+.section_space {
+	padding: 40px 0;
+}
+
+.title_section {
+	font-weight: 700;
+}
+
+.welcome_content {
+	max-width: 70%;
+	margin: auto;
+}
+
+.title_bottom {
+	color: #780206;
+	text-transform: uppercase;
+	font-family: "Montserrat", sans-serif;
+	font-size: 0.8rem;
+	font-weight: 600;
+}
+
+.welcome_p {
+	margin-top: 50px;
+}
+
+/*===== our values =====*/
+
+.abnasir_values {
+	background: url('../img/box-parallax02.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	position: relative;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	height: 400px;
+	z-index: 1;
+}
+
+.abnasir_values_content {
+	padding-top: 20px;
+}
+
+.abnasir_values .title_section {
+	padding-top: 5rem;
+}
+
+.abnasir_values h4 {
+	text-transform: capitalize;
+}
+
+/*====== Gallery ========*/
+.circle-icon {
+	background: #780206;
+	width: 100px;
+	height: 100px;
+	color: #fff;
+	font-size: 2.2rem;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 100px;
+	vertical-align: middle;
+	padding: 30px;
+	margin-bottom: 20px;
+}
+
+.gallery img {
+	width: 100px;
+}
+
+.gallery_box_home:hover .car_horizontal_list {
+	color: #780206;
+}
+
+.car_horizontal_list {
+	display: inline-block;
+	letter-spacing: 1px;
+	font-size: 0.7rem;
+	text-transform: uppercase;
+}
+
+.cars_horizontal_list:hover {
+	background: #780206;
+	color: #fff;
+
+	border: 1px solid grey;
+}
+
+/*=====Pages=======*/
+
+.page2_arrow {
+	display: inline-block;
+	text-transform: capitalize;
+	color: #780206;
+}
+
+/*======= car photos ======*/
+
+.car_photos .card .card-title {
+	font-size: 1rem;
+}
+
+.car_btn {
+	color: #780206;
+	text-transform: capitalize;
+	float: right;
+}
+
+.car_details_btn:hover {
+	color: #780206;
+}
+
+.in_stock_cars_title {
+	color: #780206;
+	text-transform: capitalize;
+}
+
+.car_details_btn {
+	font-weight: 400;
+}
+
+.car_photos {
+	margin-top: 20px;
+}
+
+.car_photos h5 {
+	text-transform: uppercase;
+}
+
+.car_photos .card-img-top {
+	width: 100%;
+	height: 30vh;
+	object-fit: cover;
+}
+
+.card-img-top {
+	width: 100%;
+}
+
+.sub_section i {
+	font-size: 12px;
+	padding-right: 2px;
+}
+
+.btn-primary {
+	background-color: #780206;
+}
+
+.btn-primary:hover {
+	background-color: rgba(120, 2, 6, 0.9);
+}
+
+.final_price {
+	border: 1px solid grey;
+	padding: 20px;
+	color: #780206;
+}
+
+.price_number {
+	text-transform: uppercase;
+	padding: 20px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+/*======= footer =======*/
+.footer {
+	background: #780206;
+	color: #fff;
+}
+
+.footer h4 {
+	font-size: 1.2rem;
+	text-transform: capitalize;
+	padding-bottom: 20px;
+}
+
+.list-unstyled a {
+	color: #fff;
+}
+
+.sb_mozmedia {
+	background: #780206;
+	color: #fff;
+	position: relative;
+	overflow: hidden;
+}
+
+.sb_mozmedia a {
+	color: #fff;
+}
+
+/*======== Car Details =========*/
+
+.tab_content {
+	display: inline-block;
+	text-transform: uppercase;
+	color: #b3b3b3;
+	padding: 10px 0;
+	font-size: 0.7rem;
+	border-bottom: 1px solid #8c8c8c;
+}
+
+.card-title_cars_section_name {
+	text-transform: uppercase;
+	color: #780206;
+}
+
+.card-title_cars_section {
+	text-transform: capitalize;
+	margin-bottom: 20px;
+	color: #780206;
+}
+
+.detail_of_car {
+	color: #8c8c8c;
+	font-weight: 300;
+	margin-right: 20px;
+	font-size: 0.9rem;
+}
+
+.car_details_all .box_car_detais {
+	height: 125px;
+	overflow: hidden;
+}
+
+.car_details_all p {
+	text-transform: capitalize;
+	font-weight: 600;
+	border-bottom: 1px solid #8c8c8c;
+	padding-bottom: 20px;
+}
+
+.car_detais_whatapp {
+	background-color: #780206;
+	color: #fff;
+	margin-left: 10px;
+}
+
+.car_detais_whatapp:hover {
+	background-color: rgba(120, 2, 6, 0.9);
+	color: #fff;
+}
+
+.call_today_abnasir {
+	font-size: 1.2rem !important;
+	text-transform: capitalize;
+	font-weight: 400;
+}
+
+/*========= media quieres ==========*/
+@media (min-width: 320px) and (max-width: 750px) {
+	.to_content_right {
+		text-align: center;
+	}
+
+	.top-menu .top_header {
+		display: block;
+	}
+
+	.navbar-brand {
+		width: 150px;
+		padding-left: 10px;
+	}
+
+	.hero_top {
+		display: block;
+		font-size: 1.5rem;
+		font-family: "Montserrat", sans-serif;
+		text-transform: capitalize;
+	}
+
+	#hero {
+		height: 300px;
+	}
+
+	.hero-caption_one {
+		padding-top: 12%;
+		text-align: center;
+	}
+
+	.hero-caption_one .digital-title {
+		font-weight: 600;
+		font-size: 2.7rem;
+		font-weight: 700;
+		letter-spacing: 1px;
+		margin: 0;
+		text-transform: capitalize;
+		padding-bottom: 10px;
+	}
+
+	.welcome_content {
+		max-width: 100%;
+		margin: auto;
+	}
+
+	.title_section {
+		font-size: 2rem;
+	}
+
+	.title_bottom {
+		font-size: 0.4;
+	}
+
+	.abnasir_values {
+		background: url('../img/box-parallax02.jpg');
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;
+		position: relative;
+		top: 0;
+		bottom: 0;
+		width: 100%;
+		height: auto;
+		z-index: 1;
+	}
+
+	.abnasir_values_content {
+		padding-top: 0px;
+	}
+
+	.abnasir_values .title_section {
+		padding-top: 1rem;
+	}
+
+	.value_box_mobile {
+		margin-bottom: 20px;
+	}
+
+	.col-lg-1.col-md-3.col-sm-12.offset-1.col-sm-offset-1.col-md-offset-3.gallery_box_home {
+		margin: 0px;
+	}
+
+	.gallery_box_home {
+		margin-bottom: 20px;
+	}
+
+	.car_photos .card-img-top {
+		height: 33vh;
+		width: 100%;
+	}
+
+	.car_photos {
+		margin-top: 0px;
+	}
+
+	.card {
+		width: 80%;
+	}
+
+	/*======== car details =========*/
+
+	.card {
+		margin: 0 auto;
+		/* Added */
+		float: none;
+		/* Added */
+		margin-bottom: 10px;
+		/* Added */
+	}
+}
+
+/*=================== Arriving soon page ======================*/
+.arriving_soon_hero {
+	background: #061161;
+	height: 150px;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	position: relative;
+	top: 0;
+	bottom: 0;
+	z-index: 1;
+}
+
+.arriving_soon_hero h5 {
+	text-transform: uppercase;
+	font-weight: 400;
+	color: #fff;
+	margin-top: 5%;
+	position: relative;
+}
+
+.car_photos p {
+	font-size: 0.7rem;
+}
+
+.car_photos .detail_of_car {
+	font-size: 0.7rem;
+	margin-right: 2px;
+}
+
+/*==============contact form==================*/
+
+.contact_form {
+	max-width: 70%;
+	margin: auto;
+}
